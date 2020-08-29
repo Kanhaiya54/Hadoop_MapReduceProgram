@@ -98,9 +98,9 @@ were	1
 
 
 6. Run the same Map-Reduce program to perform wordcount in Hadoop
-* Make input file available in the path /user/harish/wordcount_input in HDFS
+* Make input file available in the path /user/cloudera/wordcount_input in HDFS
 
-[cloudera@quickstart mapred180506]$ /usr/bin/hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar -files wordcount_mapper.py,wordcount_reducer.py -mapper wordcount_mapper.py -reducer wordcount_reducer.py -input /user/harish/wordcount_input -output /user/harish/wordcount_output
+[cloudera@quickstart mapred180506]$ /usr/bin/hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar -files wordcount_mapper.py,wordcount_reducer.py -mapper wordcount_mapper.py -reducer wordcount_reducer.py -input /user/cloudera/wordcount_input -output /user/harish/wordcount_output
 
 * Output file will be available in the path /user/harish/wordcount_output
 ********** 1st program end **************
